@@ -68,6 +68,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
     transition: all 0.2s ease-in-out;
+    height: 98vh;
 }
 
 .chat-view {
@@ -467,6 +468,7 @@ p.secondary {
     text-align: center;
     padding: 0px 45px 0 45px;
     box-shadow: var(--color-main) 0 0 50px;
+    margin-top: 90px;
 }
 
 .message-wrapper {
@@ -493,9 +495,10 @@ p.secondary {
 }
 
 .disclaimer {
-    margin-top: 12px;
+    margin-top: 25px;
     color: var(--color-disclaimer);
     font-size: 0.7em;
+    margin-bottom: 0;
 }
 
 .send-button {
@@ -521,4 +524,12 @@ button.send-button:hover {
 
 p {
     margin: 0 0 1.5em 0;
+}
+
+@media (max-width: 560px) {
+    #sidebar{
+        height: 132vh;
+        width: 240px;
+        text-overflow: ellipsis;
+    }
 }
